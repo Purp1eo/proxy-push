@@ -4,12 +4,13 @@ public class Aufgabe_1 {
 
     public static void main(String[] args) {
         double[] myArray = { 2, 3, 87, 87, 51345, 1, 345, 151, 51, 10 };
-        double[] myStatsArray = getMetrics(myArray);
 
-        System.out.println(Arrays.toString(myStatsArray));
-        System.out.println(getIndexOfValue(myArray, 87));
-        removeValueAtIndex(myArray, 9);
         System.out.println(Arrays.toString(myArray));
+        System.out.println(Arrays.toString(getMetrics(myArray)));
+        System.out.println(getIndexOfValue(myArray, 87));
+        System.out.println(Arrays.toString(removeValueAtIndex(myArray, 9)));
+        // addValueAtIndex(myArray, 7.77, 5);
+        // System.out.println(Arrays.toString(myArray));
     }
 
     public static double getAvg(double[] passedArray) {
@@ -101,6 +102,7 @@ public class Aufgabe_1 {
             newArray[j] = passedArray[i];
         }
 
+        passedArray = newArray;
         return newArray;
     }
 
@@ -117,6 +119,7 @@ public class Aufgabe_1 {
             newArray[j] = passedArray[i];
         }
 
+        passedArray = newArray;
         return newArray;
     }
 }

@@ -8,27 +8,23 @@ public class Aufgabe_2 {
 
             System.out.println("\nYou can now choose what you want to do with your array.");
 
-            System.out.println("\nYour array:");
-            System.out.println(Arrays.toString(passedArray) + "\n");
-
-            System.out.println("1) Get the mean value of the array");
-            System.out.println("2) Get the standard deviation of the values in the array");
-            System.out.println("3) Get the biggest value in the array");
-            System.out.println("4) Get the smalles value in the array");
-            System.out.println("5) Search for value with index");
-            System.out.println("6) Remove a specific value");
-            System.out.println("7) Add a value at a specific position");
-            System.out.println("8) Exit program");
+            System.out.println("1) Print current array");
+            System.out.println("2) Print array metrics");
+            System.out.println("3) Search for element by value");
+            System.out.println("4) Remove an element by index");
+            System.out.println("5) Add an element at index");
+            System.out.println("anything else) Exit program");
             choice = scn.nextInt();
 
             switch (choice) {
                 case 1:
                     System.out.println("\033[H\033[2J"); // this clears the terminal
-                    System.out.print("The mean value is " + avg + "\n");
+                    System.out.println("Current array:");
+                    System.out.println("OUT OF ORDER");
                     break;
                 case 2:
                     System.out.println("\033[H\033[2J"); // this clears the terminal
-                    System.out.print("The standard deviation is " + sd + "\n");
+                    System.out.println("");
                     break;
                 case 3:
                     System.out.println("\033[H\033[2J"); // this clears the terminal
